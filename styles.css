@@ -7,11 +7,6 @@ body {
   font-family: 'Red Rose', sans-serif;
   color: white;
   background-color: rgb(0, 0, 0);
-  min-height: 100vh;
-}
-
-main {
-  flex: 1; 
 }
 
 header {
@@ -292,7 +287,7 @@ section {
   }
 }
 
-@media (max-width: 480px) {
+@media  (max-width:480px){
 
   header {
     flex-direction: row;
@@ -334,6 +329,8 @@ section {
   }
 
 }
+
+
 
 footer {
   background-color: #ab0909;
