@@ -113,14 +113,14 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 30px;
+  padding: 20px;
   position: relative;
 }
 
 .avenger-box {
   position: relative;
-  width: 180px;
-  height: 180px;
+  width: 160px;
+  height: 160px;
   overflow: hidden;
   border: 3px transparent; 
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0 1px 3px rgba(0, 0, 0, 0.12);
@@ -166,55 +166,6 @@ section {
   width: 40%;           
 }
 
-footer {
-  background-color: #ab0909;
-  text-align: center;
-  padding: 5px;
-  font-size: 0.7em;
-}
-
-.character-section{
-  background-image: url('images/charaphoto.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: linear-gradient(rgba(21, 21, 21, 0.5), rgba(21, 21, 21, 0.5)), url('images/charaphoto.jpg');
-}
-
-.character-section h1{
-  font-size: 5em;
-  margin: 20px 0;
-  color: #e3e3e3;
-  padding: 100px;
-}
-
-
-.character-grid {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 40px;
-  padding: 50px;
-  margin-top: 80px;
-  justify-items: center;
-}
-
-.character {
-  position: relative;
-  width: 200px; 
-  height: 250px; 
-  cursor: pointer;
-  transition: transform 0.3s;
-  overflow: hidden; 
-}
-
-.character img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 10px 10px 0px 0px ;
-  transition: transform 0.3s;
-}
-
-
 
 .hover-message, .name {
   position: absolute;
@@ -239,15 +190,6 @@ footer {
   visibility: hidden;
 }
 
-.character:hover .hover-message {
-  opacity: 1;
-  visibility: visible;
-}
-
-.character:hover img {
-  transform: scale(1.1);  
-}
-
 .avenger-box:hover .hover-message {
   opacity: 1;
   visibility: visible;
@@ -261,6 +203,10 @@ footer {
 
 @media (max-width: 1024px) {
   
+  .welcome h1{
+    margin-top: 50px;
+  }
+
   .welcome img {
     width: 80%;
   }
@@ -268,6 +214,22 @@ footer {
   .about h2, .about p {
     margin-left: 20px;
     margin-right: 20px;
+  }
+
+  .about h2{
+    margin-top: 50px;
+  }
+
+  .avenger-box {
+    position: relative;
+    width: 110px;
+    height: 120px;
+    justify-content: space-between;
+  }
+
+  #characters {
+    margin-bottom: 50px;
+
   }
 }
 
@@ -304,13 +266,8 @@ footer {
   }
 
   .characters .avengers {
-    grid-template-columns: repeat(2, 1fr); 
-    gap: 20px;
-  }
-
-  .character-section h1 {
-    font-size: 3em;
-    padding: 50px;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 10px;
   }
 
   .about h2, .about p {
@@ -324,28 +281,41 @@ footer {
     justify-content: space-between;
   }
 
-  .avenger-box{
-    padding: 5px;
+  .avenger-box {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    justify-content: space-between;
   }
 }
 
 @media (max-width: 480px) {
+
+  header {
+    flex-direction: row;
+    height: auto;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
   
+  nav ul li {
+    margin:3px
+  }
+
   .welcome h1 {
     font-size: 1.5em;
+    text-align: center;
   }
 
-  .character-grid {
-    grid-template-columns: 1fr; 
-  }
-
-  .character-section h1 {
-    font-size: 2em;
-    padding: 20px;
+  .welcome img {
+    width: 90%;
   }
 
   .about h2, .about p {
-    text-align: center; 
+    text-align: justify; 
     margin-left: 5px;
     margin-right: 5px;
   }
@@ -359,5 +329,12 @@ footer {
     width: 100%;
     height: auto; 
   }
+
 }
 
+footer {
+  background-color: #ab0909;
+  text-align: center;
+  padding: 5px;
+  font-size: 0.7em;
+}
