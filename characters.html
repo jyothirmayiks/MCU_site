@@ -22,229 +22,645 @@
   </header>
 
   <section class="character-section">
-    <h1 >MARVEL CHARACTERS</h1>
+    <h1>MARVEL CHARACTERS</h1>
   </section>
 
   <div class="character-search">
     <input type="text" id="searchInput" placeholder="Search for a character...">
   </div>
-  
+
 
   <section class="character-grid">
-    <div class="character" >
-      <a href="https://en.wikipedia.org/wiki/Abomination_(character)">
-        <img src="images/Abomination.jpg" alt="Abomination"></a>
+    <div class="character" onclick="showModal('abomination-modal')">
+      <img src="images/Abomination.jpg" alt="abomination">
       <p class="name">Abomination</p>
       <div class="hover-message">View Details</div>
     </div>
+    <div id="abomination-modal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('abomination-modal')">&times;</span>
+        <div class="image-text">
+          <div class="imagepart"><img src="images/Abomination.jpg"></div>
+          <div class="text">
+            <h2>Abomination</h2>
+            <p>Savage and full of a blind rage, Abomination is the Hulk’s foremost foe and while able to crush him, he
+              often faces defeat himself.</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <div class="character" >
-      <a href="https://en.wikipedia.org/wiki/Agatha_Harkness">
-        <img src="images/Agatha.jpg" alt="Agatha"></a>
+    <div class="character" onclick="showModal('agatha-modal')">
+      <img src="images/Agatha.jpg" alt="agatha">
       <p class="name">Agatha Harkness</p>
       <div class="hover-message">View Details</div>
     </div>
-    <div class="character" >
-      <a href="https://en.wikipedia.org/wiki/Ant-Man">
-        <img src="images/Antman.jpg" alt="Antman"></a>
+    <div id="agatha-modal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('agatha-modal')">&times;</span>
+        <div class="image-text">
+          <div class="imagepart"><img src="images/Agatha.jpg"></div>
+          <div class="text">
+            <h2>Agatha Harkness</h2>
+            <p>The centuries-old witch Agatha Harkness uses her potent spells to protect others and train powerful
+              beings in the art of magic.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="character" onclick="showModal('ant-modal')">
+      <img src="images/Antman.jpg" alt="ant">
       <p class="name">Ant-Man</p>
       <div class="hover-message">View Details</div>
     </div>
-    <div class="character" >
-      <a href="https://en.wikipedia.org/wiki/Black_Panther_(character)">
-      <img src="images/black panther.jpg" alt="Panther"></a>
-      <p class="name">Black Panther</p>
+    <div id="ant-modal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('ant-modal')">&times;</span>
+        <div class="image-text">
+          <div class="imagepart"><img src="images/Antman.jpg"></div>
+          <div class="text">
+            <h2>Ant-Man</h2>
+            <p>Ex-con Scott Lang finds a new lease on life, and a chance to redeem himself in the eyes of his daughter,
+              after taking over the mantle of Ant-Man.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="character" onclick="showModal('bp-modal')">
+      <img src="images/black panther.jpg" alt="bp">
+      <p class="name">ABlack Panther</p>
       <div class="hover-message">View Details</div>
     </div>
-    <div class="character" >
-      <a href="https://en.wikipedia.org/wiki/Black_Widow_(Natasha_Romanova)">
-      <img src="images/Black_widow.jpg" alt="Natasha"></a>
+    <div id="bp-modal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('bp-modal')">&times;</span>
+        <div class="image-text">
+          <div class="imagepart"><img src="images/black panther.jpg"></div>
+          <div class="text">
+            <h2>Black Panther</h2>
+            <p>T’Challa is the king of the secretive and highly advanced African nation of Wakanda - as well as the
+              powerful warrior known as the Black Panther.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="character" onclick="showModal('bw-modal')">
+      <img src="images/Black_widow.jpg" alt="bw">
       <p class="name">Black Widow</p>
       <div class="hover-message">View Details</div>
     </div>
-    <div class="character" >
-      <a href="https://en.m.wikipedia.org/wiki/Captain_America">
-      <img src="images/cap.jpg" alt="Cap"></a>
+    <div id="bw-modal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('bw-modal')">&times;</span>
+        <div class="image-text">
+          <div class="imagepart"><img src="images/bw2.webp"></div>
+          <div class="text">
+            <h2>Black Widow</h2>
+            <p>Natasha Romanoff, separated from the now-fractured Avengers, confronts the dark path she took to
+              becoming a spy and assassin, as well as events that followed.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="character" onclick="showModal('cap-modal')">
+      <img src="images/cap.jpg" alt="cap">
       <p class="name">Captain America</p>
       <div class="hover-message">View Details</div>
     </div>
-    <div class="character" >
-      <a href="https://en.m.wikipedia.org/wiki/Captain_Marvel_(film)">
-      <img src="images/captain marvel.jpg" alt="capmarvel"></a>
+    <div id="cap-modal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('cap-modal')">&times;</span>
+        <div class="image-text">
+          <div class="imagepart"><img src="images/cap2.webp"></div>
+          <div class="text">
+            <h2>Captain America</h2>
+            <p>Recipient of the Super Soldier serum, World War II hero Steve Rogers fights for American ideals as one
+              of the world’s mightiest heroes and the leader of the Avengers.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="character" onclick="showModal('capt-modal')">
+      <img src="images/captain marvel.jpg" alt="capt">
       <p class="name">Captain Marvel</p>
       <div class="hover-message">View Details</div>
     </div>
-    <div class="character" >
-      <a href="https://en.m.wikipedia.org/wiki/Daredevil_(Marvel_Comics_character)">
-      <img src="images/Daredevil.jpg" alt="daredevil"></a>
+    <div id="capt-modal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('capt-modal')">&times;</span>
+        <div class="image-text">
+          <div class="imagepart"><img src="images/captain marvel.jpg"></div>
+          <div class="text">
+            <h2>Captain Marvel</h2>
+            <p>Carol Danvers becomes one of the universe's most powerful heroes when Earth is caught in the middle of a
+              galactic war between two alien races.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="character" onclick="showModal('dare-modal')">
+      <img src="images/Daredevil.jpg" alt="dare">
       <p class="name">Daredevil</p>
       <div class="hover-message">View Details</div>
     </div>
-    <div class="character" >
-      <a href="https://en.wikipedia.org/wiki/Doctor_Strange">
-      <img src="images/dr_strange.jpeg" alt="drstrange"></a>
+    <div id="dare-modal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('dare-modal')">&times;</span>
+        <div class="image-text">
+          <div class="imagepart"><img src="images/Daredevil.jpg"></div>
+          <div class="text">
+            <h2>Daredevil</h2>
+            <p>Blinded in a childhood accident, attorney-at-law Matt Murdock protects Hell’s Kitchen as the masked
+              vigilante, Daredevil.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="character" onclick="showModal('dr-modal')">
+      <img src="images/dr_strange.jpeg" alt="dr">
       <p class="name">Doctor Strange</p>
       <div class="hover-message">View Details</div>
     </div>
-    <div class="character" >
-
-    <a href="https://en.m.wikipedia.org/wiki/Falcon_(comics)">
-      <img src="images/falcon.jpg" alt="falcon"></a>
+    <div id="dr-modal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('dr-modal')">&times;</span>
+        <div class="image-text">
+          <div class="imagepart"><img src="images/dr_strange.jpeg"></div>
+          <div class="text">
+            <h2>Doctor Strange</h2>
+            <p>Doctor Strange, aka Stephen Strange, is a brilliant neurosurgeon who becomes the Sorcerer Supreme after
+              mastering the mystic arts. Using powerful spells, the Time Stone, and his intellect, he defends the
+              universe from magical and interdimensional threats.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="character" onclick="showModal('falcon-modal')">
+      <img src="images/falcon.jpg" alt="falcon">
       <p class="name">Falcon</p>
       <div class="hover-message">View Details</div>
     </div>
-    <div class="character" >
-      <a href="https://en.m.wikipedia.org/wiki/Gamora">
-      <img src="images/gamora.jpg" alt="gamora"></a>
+    <div id="falcon-modal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('falcon-modal')">&times;</span>
+        <div class="image-text">
+          <div class="imagepart"><img src="images/falcon.jpg"></div>
+          <div class="text">
+            <h2>Falcon</h2>
+            <p>Sam Wilson, formerly the Falcon, takes on the mantle of Captain America as he teams up with his fellow
+              Avengers.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="character" onclick="showModal('gamora-modal')">
+      <img src="images/gamora.jpg" alt="gamora">
       <p class="name">Gamora</p>
       <div class="hover-message">View Details</div>
     </div>
-    <div class="character" >
-      <a href="https://en.m.wikipedia.org/wiki/Groot">
-      <img src="images/groot.jpg" alt="groot"></a>
+    <div id="gamora-modal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('gamora-modal')">&times;</span>
+        <div class="image-text">
+          <div class="imagepart"><img src="images/gamora.jpg"></div>
+          <div class="text">
+            <h2>Gamora</h2>
+            <p>Raised by Thanos to be a living weapon, Gamora seeks redemption as a member of the Guardians of the
+              Galaxy, putting her extraordinary fighting abilities to good use.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="character" onclick="showModal('groot-modal')">
+      <img src="images/groot.jpg" alt="cap">
       <p class="name">Groot</p>
       <div class="hover-message">View Details</div>
     </div>
-    <div class="character" >
-      <a href="https://en.wikipedia.org/wiki/Hawkeye_(Clint_Barton)">
-      <img src="images/hawkeye.jpg" alt="hawkeye"></a>
+    <div id="groot-modal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('groot-modal')">&times;</span>
+        <div class="image-text">
+          <div class="imagepart"><img src="images/groot.jpg"></div>
+          <div class="text">
+            <h2>Groot</h2>
+            <p>This sentient alien tree branches out of his comfort zone to help the Guardians of the Galaxy keep the
+              people of the universe safe.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="character" onclick="showModal('hawk-modal')">
+      <img src="images/hawkeye.jpg" alt="hawk">
       <p class="name">Hawkeye</p>
       <div class="hover-message">View Details</div>
     </div>
-    <div class="character" >
-      <a href="https://en.wikipedia.org/wiki/Heimdall_(character)">
-      <img src="images/heimdall.jpg" alt="heimdal"></a>
+    <div id="hawk-modal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('hawk-modal')">&times;</span>
+        <div class="image-text">
+          <div class="imagepart"><img src="images/hawkeye.jpg"></div>
+          <div class="text">
+            <h2>Hawkeye</h2>
+            <p>A master marksman and longtime friend of Black Widow, Clint Barton serves as the Avengers’ amazing
+              archer.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="character" onclick="showModal('heim-modal')">
+      <img src="images/heimdall.jpg" alt="heim">
       <p class="name">Heimdall</p>
       <div class="hover-message">View Details</div>
     </div>
-    <div class="character" >
-      <a href="https://en.m.wikipedia.org/wiki/Hela_(character)">
-      <img src="images/hela.jpg" alt="hela"></a>
+    <div id="heim-modal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('heim-modal')">&times;</span>
+        <div class="image-text">
+          <div class="imagepart"><img src="images/heimdall.jpg"></div>
+          <div class="text">
+            <h2>Heimdall</h2>
+            <p>An all-seeing Asgardian in charge of guarding the Rainbow Bridge known as the Bifrost, Heimdall's keen
+              skills serve him well as a first line of defense.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="character" onclick="showModal('hela-modal')">
+      <img src="images/hela.jpg" alt="hela">
       <p class="name">Hela</p>
       <div class="hover-message">View Details</div>
     </div>
-    <div class="character" >
-      <a href="https://en.m.wikipedia.org/wiki/Hulk">
-      <img src="images/hulk.jpg" alt="hulk"></a>
+    <div id="hela-modal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('hela-modal')">&times;</span>
+        <div class="image-text">
+          <div class="imagepart"><img src="images/hela.jpg"></div>
+          <div class="text">
+            <h2>Hela</h2>
+            <p>Hela, the Goddess of Death in Norse mythology and Marvel lore, is a formidable villain known for her
+              immense strength, mastery over necromancy, and ambition to rule Asgard. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="character" onclick="showModal('hulk-modal')">
+      <img src="images/hulk.jpg" alt="hulk">
       <p class="name">Hulk</p>
       <div class="hover-message">View Details</div>
     </div>
-    <div class="character" >
-      <a href="https://en.wikipedia.org/wiki/Iron_Man">
-      <img src="images/ironman.jpg" alt="Iron Man"></a>
+    <div id="hulk-modal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('hulk-modal')">&times;</span>
+        <div class="image-text">
+          <div class="imagepart"><img src="images/hulk2.jpg"></div>
+          <div class="text">
+            <h2>Hulk</h2>
+            <p>Dr. Bruce Banner lives a life caught between the soft-spoken scientist he’s always been and the
+              uncontrollable green monster powered by his rage.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="character" onclick="showModal('ironman-modal')">
+      <img src="images/ironman.jpg" alt="Iron Man">
       <p class="name">Iron Man</p>
       <div class="hover-message">View Details</div>
     </div>
-    <div class="character" >
-      <a href="https://en.wikipedia.org/wiki/Kang_the_Conqueror">
-      <img src="images/kang.jpg" alt="kang"></a>
+    <div id="ironman-modal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('ironman-modal')">&times;</span>
+        <div class="image-text">
+          <div class="imagepart"><img src="images/ironman2.jpg"></div>
+          <div class="text">
+            <h2>Iron Man</h2>
+            <p>Iron Man, aka Tony Stark, is a genius, billionaire, philanthropist. His confidence is only
+              matched by his high-flying abilities as the hero called Iron Man.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="character" onclick="showModal('kang-modal')">
+      <img src="images/kang.jpg" alt="kang">
       <p class="name">Kang the Conqueror</p>
       <div class="hover-message">View Details</div>
     </div>
-    <div class="character" >
-      <a href="https://en.wikipedia.org/wiki/Erik_Killmonger">
-      <img src="images/kill.jpg" alt="kill"></a>
-      <p class="name">Killmonger</p>
+    <div id="kang-modal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('kang-modal')">&times;</span>
+        <div class="image-text">
+          <div class="imagepart"><img src="images/kang.jpg"></div>
+          <div class="text">
+            <h2>Kang the Conqueror</h2>
+            <p>Kang the Conqueror, a time-traveling supervillain in Marvel Comics, is a genius strategist and master of
+              advanced technology. Known for his ability to manipulate timelines, Kang seeks to conquer civilizations
+              across different eras, often clashing with the Avengers</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="character" onclick="showModal('kill-modal')">
+      <img src="images/kill.jpg" alt="kill">
+      <p class="name">Erik Killmonger</p>
       <div class="hover-message">View Details</div>
     </div>
-    <div class="character" >
-      <a href="https://en.m.wikipedia.org/wiki/Loki">
-      <img src="images/loki.jpg" alt="loki"></a>
+    <div id="kill-modal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('kill-modal')">&times;</span>
+        <div class="image-text">
+          <div class="imagepart"><img src="images/kill.jpg"></div>
+          <div class="text">
+            <h2>Erik Killmonger</h2>
+            <p>Raised in America, the man known as Erik Killmonger returns to his father's home of Wakanda determined to
+              overthrow T'Challa and rule the nation himself.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="character" onclick="showModal('loki-modal')">
+      <img src="images/loki.jpg" alt="loki">
       <p class="name">Loki</p>
       <div class="hover-message">View Details</div>
     </div>
-    <div class="character" >
-      <a href="https://en.m.wikipedia.org/wiki/Moon_Knight">
-      <img src="images/moonknight.jpg" alt="moonknight"></a>
+    <div id="loki-modal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('loki-modal')">&times;</span>
+        <div class="image-text">
+          <div class="imagepart"><img src="images/loki.jpg"></div>
+          <div class="text">
+            <h2>Loki</h2>
+            <p>God of Mischief and brother to Thor, Loki’s tricks and schemes wreak havoc across the realms.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="character" onclick="showModal('moon-modal')">
+      <img src="images/moonknight.jpg" alt="moon">
       <p class="name">Moon Knight</p>
       <div class="hover-message">View Details</div>
     </div>
-    <div class="character" >
-      <a href="https://en.wikipedia.org/wiki/Kamala_Khan_(Marvel_Cinematic_Universe)">
-      <img src="images/msmarvel.jpg" alt="msmarvel"></a>
+    <div id="moon-modal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('moon-modal')">&times;</span>
+        <div class="image-text">
+          <div class="imagepart"><img src="images/moonknight.jpg"></div>
+          <div class="text">
+            <h2>Moon Knight</h2>
+            <p>Moon Knight, aka Marc Spector, is a complex Marvel superhero and vigilante chosen as the avatar of the
+              Egyptian moon god Khonshu.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="character" onclick="showModal('ms-modal')">
+      <img src="images/msmarvel.jpg" alt="ms">
       <p class="name">Ms Marvel</p>
       <div class="hover-message">View Details</div>
     </div>
-    <div class="character" >
-      <a href="https://en.wikipedia.org/wiki/Nick_Fury">
-      <img src="images/nick.jpg" alt="nick"></a>
+    <div id="ms-modal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('ms-modal')">&times;</span>
+        <div class="image-text">
+          <div class="imagepart"><img src="images/msmarvel.jpg"></div>
+          <div class="text">
+            <h2>Ms Marvel</h2>
+            <p>Pakistani-American Super Hero Kamala Khan protects the streets of Jersey City with her one-of-a-kind
+              embiggening power.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="character" onclick="showModal('nick-modal')">
+      <img src="images/nick.jpg" alt="nick">
       <p class="name">Nick Fury</p>
       <div class="hover-message">View Details</div>
     </div>
-    <div class="character" >
-      <a href="https://en.wikipedia.org/wiki/Quicksilver_(Marvel_Comics)">
-      <img src="images/quicksilver.jpg" alt="pietro"></a>
-      <p class="name">Quicksilver</p>
+    <div id="nick-modal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('nick-modal')">&times;</span>
+        <div class="image-text">
+          <div class="imagepart"><img src="images/nick.jpg"></div>
+          <div class="text">
+            <h2>Nick Fury</h2>
+            <p>A veteran S.H.I.E.L.D. operative, Nick Fury continues the legacy as one of the greatest super spies in
+              the world.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="character" onclick="showModal('quick-modal')">
+      <img src="images/quicksilver.jpg" alt="quick">
+      <p class="name">Quick Silver</p>
       <div class="hover-message">View Details</div>
     </div>
-    <div class="character" >
-      <a href="https://en.wikipedia.org/wiki/Shang-Chi">
-      <img src="images/Shang.jpg" alt="shangchi"></a>
+    <div id="quick-modal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('quick-modal')">&times;</span>
+        <div class="image-text">
+          <div class="imagepart"><img src="images/quicksilver.jpg"></div>
+          <div class="text">
+            <h2>Quick Silver</h2>
+            <p>Quicksilver, aka Pietro Maximoff, is a Marvel superhero known for his superhuman speed. As the twin
+              brother of Wanda Maximoff, he uses his lightning-fast reflexes and agility to fight
+              alongside heroes like the Avengers or defend his family.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="character" onclick="showModal('shang-modal')">
+      <img src="images/Shang.jpg" alt="shang">
       <p class="name">Shang-Chi</p>
       <div class="hover-message">View Details</div>
     </div>
-    <div class="character" >
-      <a href="https://en.m.wikipedia.org/wiki/Spider-Man">
-      <img src="images/spiderman.jpg" alt="peter"></a>
-      <p class="name">Spiderman</p>
-      <div class="hover-message">View Details</div>
-
+    <div id="shang-modal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('shang-modal')">&times;</span>
+        <div class="image-text">
+          <div class="imagepart"><img src="images/Shang.jpg"></div>
+          <div class="text">
+            <h2>Shang-Chi</h2>
+            <p>Shang-Chi, known as the Master of Kung Fu, is a superhero renowned for his unparalleled martial
+              arts skills. Raised and trained by his father, a powerful warlord, Shang-Chi defies his dark legacy to
+              become a hero.</p>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="character" >
-      <a href="https://en.wikipedia.org/wiki/Star-Lord">
-      <img src="images/starlord.jpg" alt="starlord"></a>
+    <div class="character" onclick="showModal('spider-modal')">
+      <img src="images/spiderman.jpg" alt="spider">
+      <p class="name">Spider-Man</p>
+      <div class="hover-message">View Details</div>
+    </div>
+    <div id="spider-modal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('spider-modal')">&times;</span>
+        <div class="image-text">
+          <div class="imagepart"><img src="images/spiderman.jpg"></div>
+          <div class="text">
+            <h2>Spider-Man</h2>
+            <p>Bitten by a radioactive spider, Peter Parker’s arachnid abilities give him amazing powers he uses to help
+              others, while his personal life continues to offer plenty of obstacles.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="character" onclick="showModal('star-modal')">
+      <img src="images/starlord.jpg" alt="star">
       <p class="name">Star-Lord</p>
       <div class="hover-message">View Details</div>
     </div>
-    <div class="character" >
-      <a href="https://en.m.wikipedia.org/wiki/Thanos">
-      <img src="images/thanos.jpg" alt="thanos"></a>
+    <div id="star-modal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('star-modal')">&times;</span>
+        <div class="image-text">
+          <div class="imagepart"><img src="images/starlord.jpg"></div>
+          <div class="text">
+            <h2>Star-Lord</h2>
+            <p>Leader of the Guardians of the Galaxy, Peter Quill, known as Star-Lord, brings a sassy sense of humor
+              while protecting the universe from any and all threats.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="character" onclick="showModal('thanos-modal')">
+      <img src="images/thanos.jpg" alt="thanos">
       <p class="name">Thanos</p>
       <div class="hover-message">View Details</div>
     </div>
-    <div class="character" >
-      <a href="https://en.m.wikipedia.org/wiki/Thor">
-      <img src="images/thor.jpg" alt="thor"></a>
+    <div id="thanos-modal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('thanos-modal')">&times;</span>
+        <div class="image-text">
+          <div class="imagepart"><img src="images/thanos.jpg"></div>
+          <div class="text">
+            <h2>Thanos</h2>
+            <p>The Mad Titan Thanos quests across the universe in search of the Infinity Stones, intending to use their
+              limitless power for shocking purposes.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="character" onclick="showModal('thor-modal')">
+      <img src="images/thor.jpg" alt="thor">
       <p class="name">Thor</p>
       <div class="hover-message">View Details</div>
     </div>
-    <div class="character" >
-      <a href="https://en.wikipedia.org/wiki/Vision_(Marvel_Cinematic_Universe)">
-      <img src="images/vision.jpg" alt="vision"></a>
-      <p class="name">Vision</p>
+    <div id="thor-modal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('thor-modal')">&times;</span>
+        <div class="image-text">
+          <div class="imagepart"><img src="images/thor2.jpg"></div>
+          <div class="text">
+            <h2>Thor</h2>
+            <p>The son of Odin uses his mighty abilities as the God of Thunder to protect his home Asgard and planet
+              Earth alike.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="character" onclick="showModal('vision-modal')">
+      <img src="images/vision.jpg" alt="vision">
+      <p class="name">Vison</p>
       <div class="hover-message">View Details</div>
     </div>
-    <div class="character"
-      >
-      <a href="https://en.m.wikipedia.org/wiki/Wanda_Maximoff_(Marvel_Cinematic_Universe)">
-      <img src="images/wanda.jpg" alt="wanda"></a>
+    <div id="vision-modal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('vision-modal')">&times;</span>
+        <div class="image-text">
+          <div class="imagepart"><img src="images/vision.jpg"></div>
+          <div class="text">
+            <h2>Vision</h2>
+            <p>The android called Vision defies physics and fights as an Avenger with the power of density manipulation
+              and his flawless computer brain.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="character" onclick="showModal('wanda-modal')">
+      <img src="images/wanda.jpg" alt="wanda">
       <p class="name">Scarlet Witch</p>
       <div class="hover-message">View Details</div>
     </div>
-    <div class="character">
-      <a href="https://en.m.wikipedia.org/wiki/Wasp_(character)">
-      <img src="images/wasp.jpg" alt="hope"></a>
+    <div id="wanda-modal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('wanda-modal')">&times;</span>
+        <div class="image-text">
+          <div class="imagepart"><img src="images/wanda.jpg"></div>
+          <div class="text">
+            <h2>Scarlet Witch</h2>
+            <p>Notably powerful, Wanda Maximoff has fought both against and with the Avengers, attempting to hone her
+              abilities and do what she believes is right to help the world.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="character" onclick="showModal('wasp-modal')">
+      <img src="images/wasp.jpg" alt="wasp">
       <p class="name">The Wasp</p>
       <div class="hover-message">View Details</div>
     </div>
-    <div class="character" >
-      <a href="https://en.wikipedia.org/wiki/Bucky_Barnes">
-      <img src="images/winter soldier.jpg" alt="bucky"></a>
+    <div id="wasp-modal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('wasp-modal')">&times;</span>
+        <div class="image-text">
+          <div class="imagepart"><img src="images/wasp.jpg"></div>
+          <div class="text">
+            <h2>The Wasp</h2>
+            <p>Showing the same scientific and heroic aptitude as her parents, the hero springs into action as the
+              unstoppable Wasp.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="character" onclick="showModal('bucky-modal')">
+      <img src="images/winter soldier.jpg" alt="bucky">
       <p class="name">Winter Soldier</p>
       <div class="hover-message">View Details</div>
     </div>
-    <div class="character" >
-      <a href="https://en.wikipedia.org/wiki/Wolverine_(character)">
-      <img src="images/wolverine.jpg" alt="wolverine"></a>
-      <p class="name">Wolverine>
-        </p>
+    <div id="bucky-modal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('bucky-modal')">&times;</span>
+        <div class="image-text">
+          <div class="imagepart"><img src="images/winter soldier.jpg"></div>
+          <div class="text">
+            <h2>Winter Soldier</h2>
+            <p>Bucky Barnes was brought back from his supposed death to be a brainwashed assassin called the Winter Soldier. Reformed by his friends, he now fights alongside the Avengers</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="character" onclick="showModal('wolv-modal')">
+      <img src="images/wolverine.jpg" alt="wolv">
+      <p class="name">Wolverine</p>
       <div class="hover-message">View Details</div>
     </div>
-    <div class="character" >
-      <a href="https://en.wikipedia.org/wiki/Wong_(Marvel_Cinematic_Universe)">
-      <img src="images/wong.jpg" alt="wong"></a>
+    <div id="wolv-modal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('wolv-modal')">&times;</span>
+        <div class="image-text">
+          <div class="imagepart"><img src="images/wolverine.jpg"></div>
+          <div class="text">
+            <h2>Wolverine</h2>
+            <p>A mutant with an unstoppable healing power, adamantium metal claws and no-nonsense attitude makes the man called Logan, one of the most ferocious heroes in the universe.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="character" onclick="showModal('wong-modal')">
+      <img src="images/wong.jpg" alt="wong">
       <p class="name">Wong</p>
       <div class="hover-message">View Details</div>
+    </div>
+    <div id="wong-modal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('wong-modal')">&times;</span>
+        <div class="image-text">
+          <div class="imagepart"><img src="images/wong.jpg"></div>
+          <div class="text">
+            <h2>Wong</h2>
+            <p>A master of the martial and mystic arts, Wong is a close companion of Doctor Strange.</p>
+          </div>
+        </div>
+      </div>
     </div>
 
   </section>
@@ -258,6 +674,8 @@
   </footer>
 
   <script src="script.js"></script>
+
+  <script src="popup.js"></script>
 
 </body>
 

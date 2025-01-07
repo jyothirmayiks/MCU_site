@@ -105,44 +105,117 @@
     <h2>Meet the Marvel Heroes</h2>
     <p>Every hero has a story, every villain has a motive; get to know the characters that define Marvel.</p>
     <div class="avengers">
-      <div class="avenger-box">
-        <a href="https://en.wikipedia.org/wiki/Iron_Man">
-          <img src="images/ironman.jpg" alt="Iron Man"></a>
+      <div class="avenger-box" onclick="showModal('ironman-modal')">
+        <img src="images/ironman.jpg" alt="Iron Man">
         <p class="name">Iron Man</p>
         <div class="hover-message">View Details</div>
       </div>
-      <div class="avenger-box">
-        <a href="https://en.m.wikipedia.org/wiki/Thor">
-          <img src="images/thor.jpg" alt="thor"></a>
+      <div id="ironman-modal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('ironman-modal')">&times;</span>
+          <div class="image-text">
+            <div class="imagepart"><img src="images/ironman2.jpg"></div>
+            <div class="text">
+              <h2>Iron Man</h2>
+              <p>Iron Man, aka Tony Stark, is a genius, billionaire, philanthropist. His confidence is only
+                matched by his high-flying abilities as the hero called Iron Man.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="avenger-box" onclick="showModal('thor-modal')">
+        <img src="images/thor.jpg" alt="thor">
         <p class="name">Thor</p>
         <div class="hover-message">View Details</div>
       </div>
-      <div class="avenger-box">
-        <a href="https://en.m.wikipedia.org/wiki/Captain_America">
-          <img src="images/cap.jpg" alt="Cap"></a>
+      <div id="thor-modal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('thor-modal')">&times;</span>
+          <div class="image-text">
+            <div class="imagepart"><img src="images/thor2.jpg"></div>
+            <div class="text">
+              <h2>Thor</h2>
+              <p>The son of Odin uses his mighty abilities as the God of Thunder to protect his home Asgard and planet
+                Earth alike.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="avenger-box" onclick="showModal('cap-modal')">
+        <img src="images/cap.jpg" alt="cap">
         <p class="name">Captain America</p>
         <div class="hover-message">View Details</div>
       </div>
-      <div class="avenger-box">
-        <a href="https://en.wikipedia.org/wiki/Black_Widow_(Natasha_Romanova)">
-          <img src="images/Black_widow.jpg" alt="Natasha"></a>
+      <div id="cap-modal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('cap-modal')">&times;</span>
+          <div class="image-text">
+            <div class="imagepart"><img src="images/cap2.webp"></div>
+            <div class="text">
+              <h2>Captain America</h2>
+              <p>Recipient of the Super Soldier serum, World War II hero Steve Rogers fights for American ideals as one
+                of the world’s mightiest heroes and the leader of the Avengers.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="avenger-box" onclick="showModal('bw-modal')">
+        <img src="images/Black_widow.jpg" alt="bw">
         <p class="name">Black Widow</p>
         <div class="hover-message">View Details</div>
       </div>
-      <div class="avenger-box">
-        <a href="https://en.m.wikipedia.org/wiki/Hulk">
-          <img src="images/hulk.jpg" alt="hulk"></a>
+      <div id="bw-modal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('bw-modal')">&times;</span>
+          <div class="image-text">
+            <div class="imagepart"><img src="images/bw2.webp"></div>
+            <div class="text">
+              <h2>Black Widow</h2>
+              <p>Natasha Romanoff, separated from the now-fractured Avengers, confronts the dark path she took to
+                becoming a spy and assassin, as well as events that followed.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="avenger-box" onclick="showModal('hulk-modal')">
+        <img src="images/hulk.jpg" alt="hulk">
         <p class="name">Hulk</p>
         <div class="hover-message">View Details</div>
       </div>
-      <div class="avenger-box">
-        <a href="https://en.wikipedia.org/wiki/Hawkeye_(Clint_Barton)">
-          <img src="images/hawkeye.jpg" alt="hawkeye"></a>
+      <div id="hulk-modal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('hulk-modal')">&times;</span>
+          <div class="image-text">
+            <div class="imagepart"><img src="images/hulk2.jpg"></div>
+            <div class="text">
+              <h2>Hulk</h2>
+              <p>Dr. Bruce Banner lives a life caught between the soft-spoken scientist he’s always been and the
+                uncontrollable green monster powered by his rage.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="avenger-box" onclick="showModal('hawk-modal')">
+        <img src="images/hawkeye.jpg" alt="hawk">
         <p class="name">Hawkeye</p>
         <div class="hover-message">View Details</div>
       </div>
+      <div id="hawk-modal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('hawk-modal')">&times;</span>
+          <div class="image-text">
+            <div class="imagepart"><img src="images/hawkeye.jpg"></div>
+            <div class="text">
+              <h2>Hawkeye</h2>
+              <p>A master marksman and longtime friend of Black Widow, Clint Barton serves as the Avengers’ amazing
+                archer.</p>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="explore-button">
-        <a href="characters.html">Explore Characters <span style="font-size: 30px; margin-left: 10px;">&#8250;</span></a>
+        <a href="characters.html">Explore Characters <span
+            style="font-size: 30px; margin-left: 10px;">&#8250;</span></a>
       </div>
     </div>
 
@@ -155,6 +228,8 @@
   <footer>
     <p>&copy; 2024 Marvel Studios. All Rights Reserved.</p>
   </footer>
+
+  <script src="popup.js"></script>
 
 </body>
 
